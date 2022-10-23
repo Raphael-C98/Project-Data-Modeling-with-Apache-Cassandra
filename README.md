@@ -18,20 +18,9 @@ As a data engineer I am doing an assignment for the startup Sparkify. Indeed, Sp
 *Project_1B_ Project_Template.ipynb :* notebook where i modeled my NoSQL database and built ETL pipeline
 
 
-## Justification of my database schema
 
-I created a star schema optimized for queries on song play analysis. In fact, primarily read optimized, star schemas will deliver good performance over large data sets.
+The image below is a screenshot of what the denormalized data should appear like in the event_datafile_new.csv after the code above is run:
 
 
-![image](sparkifydb_erd.png)   
+![image](event_data_screen.png)   
     
-
-THE FACT TABLE: The Fact Table is called 'songplays' and contains the columns songplay_id, start_time, user_id, level, song_id, artist_id, session_id, and location. The songplay_id is the primary key for this table. This means each row in this column is unique. 
-
-USERS TABLE: The "users" table is a table which contains the users of the app. The "user_id" column is the primary key column, where the rows are all unique. The columns include user_id, first_name, last_name, gender, and level. This table can be joined to the songplays table by using the 'user_id' column in each table.
-
-SONGS TABLE: The "songs" table contains all the songs in the database. The columns includes song_id, title, artist_id, year, and duration. The "song_id" column is the primary key column for this table. This table can be joined with songplays on 'song_id'.
-
-ARTISTS TABLE: The "artists" table contains the artist names in the database. The columns include artist_id, name, location, latitude and longitude. The "artist_id" is the primary key for this table. This table can be joined to the songplays table on artist_id, and also the songs table.
-
-TIME TABLE: The "time" table has the timestamp data for the song plays broken down into smaller units of time. The columns include start_time, hour, day, week, month, year, and weekday. The start_time column is the primary key. The time table can be joined to the songplays table using start_time.
