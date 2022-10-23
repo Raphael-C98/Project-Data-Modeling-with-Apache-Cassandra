@@ -22,5 +22,5 @@ As a data engineer I am doing an assignment for the startup Sparkify. Indeed, Sp
 The image below is a screenshot of what the denormalized data should appear like in the event_datafile_new.csv after the code above is run:
 
 
-![image](event_data_screen.png)   
+![image](event_data_screen.PNG)   
     
