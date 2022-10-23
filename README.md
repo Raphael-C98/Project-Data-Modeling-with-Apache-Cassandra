@@ -7,16 +7,15 @@ As a data engineer I am doing an assignment for the startup Sparkify. Indeed, Sp
 ## How to run 
 
 
-1) Run .ipynb
+1) Run Project_1B_ Project_Template.ipynb
 
 
 ## An explanation of the files in the repository
 
-*In the "data" repository :* 
-- "song_data" is a subset of real data from the Million Song Dataset. Each file is in JSON format and contains metadata about a song and the artist of that song.
-- "log_data" contains activity logs from a music streaming app based on specified configurations.
+*event_data :* directory of CSV files partitioned by date
 
-*create_table.py :* contains functions which drops and creates the tables.
+
+*Project_1B_ Project_Template.ipynb :* notebook where i modeled my NoSQL database and built ETL pipeline
 
 
 ## Justification of my database schema
